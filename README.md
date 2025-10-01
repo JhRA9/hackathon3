@@ -1,16 +1,61 @@
-# React + Vite
+# IA Platform - Plataforma de Inteligencia Artificial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Que hice
 
-Currently, two official plugins are available:
+Cree una aplicacion web completa sobre inteligencia artificial usando React, TypeScript y Node.js. La pagina permite a los usuarios crear modelos de IA, analizar datos, hacer predicciones y gestionar datasets de machine learning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## De que trata la pagina
 
-## React Compiler
+Es una plataforma donde puedes:
+- Crear y entrenar modelos de inteligencia artificial
+- Subir y analizar datasets 
+- Hacer predicciones con machine learning
+- Ver dashboards con estadisticas en tiempo real
+- Gestionar tu perfil y configuraciones
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+La idea es que cualquier persona pueda usar herramientas avanzadas de IA de forma sencilla, desde analisis de sentimientos hasta vision computacional.
 
-## Expanding the ESLint configuration
+## Donde esta todo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend** (carpeta raiz):
+- `src/pages/` - Todas las paginas (inicio de sesion, panel principal, modelos, etc)
+- `src/components/` - Encabezado, pie de pagina y componentes reutilizables
+- `src/hooks/` - Hook de autenticacion y logica de estado
+- `src/services/` - Servicios para conectar con la API
+- `src/types/` - Tipos de TypeScript
+
+**Backend** (carpeta `backend/`):
+- `src/server.js` - Servidor principal Express
+- `src/routes/` - Puntos finales de la API (autenticacion, modelos, datos, etc)
+- `src/middleware/` - Manejo de errores y registro de actividad
+- `package.json` - Dependencias del servidor
+
+## Como ejecutar
+
+**Frontend:**
+```bash
+npm run dev
+```
+
+**Backend:**
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+La aplicacion corre en `http://localhost:5173` y la API en `http://localhost:3001`
+
+## Usuarios demo
+
+- **Administrador**: admin@ia-platform.com / password
+- **Usuario**: user@ia-platform.com / password
+
+## Tecnologias usadas
+
+- React 19 + TypeScript
+- React Router para navegacion
+- Bootstrap para el diseno
+- Node.js + Express para el backend
+- JWT para autenticacion
+- bcrypt para seguridad
